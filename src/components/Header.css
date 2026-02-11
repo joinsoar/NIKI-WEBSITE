@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 100;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.brand {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.meta {
+  text-align: right;
+  font-size: 10px;
+  color: var(--text-sub);
+  line-height: 1.4;
+}

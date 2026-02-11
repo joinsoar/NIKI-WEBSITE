@@ -1,0 +1,75 @@
+.waitlist-container {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  z-index: 200;
+  opacity: 0;
+  animation: fadeIn 2s ease 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.waitlist-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 12px;
+  color: var(--text-sub);
+  display: block;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #000;
+}
+
+.input-group input[type='email'] {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--font-stack);
+  font-size: 13px;
+  color: var(--text-main);
+  padding-right: 40px;
+}
+
+.input-group input[type='email']::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.submit-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-stack);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-main);
+  position: absolute;
+  right: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 1;
+}
