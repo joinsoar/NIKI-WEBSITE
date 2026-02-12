@@ -25,3 +25,13 @@
   color: var(--text-sub);
   line-height: 1.4;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .brand {
+    font-size: 10px;
+  }
+}

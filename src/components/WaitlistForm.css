@@ -39,7 +39,7 @@
   border-color: #000;
 }
 
-.input-group input[type='email'] {
+.input-group input[type="email"] {
   background: transparent;
   border: none;
   outline: none;
@@ -50,7 +50,7 @@
   padding-right: 40px;
 }
 
-.input-group input[type='email']::placeholder {
+.input-group input[type="email"]::placeholder {
   color: #aaa;
   font-style: italic;
 }
@@ -72,4 +72,15 @@
 
 .submit-btn:hover {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .waitlist-container {
+    bottom: 28px;
+    padding: 0 24px;
+  }
+
+  .input-group input[type="email"] {
+    font-size: 16px;
+  }
 }

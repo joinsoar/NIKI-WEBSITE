@@ -54,3 +54,17 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   z-index: 1000 !important;
 }
+
+@media (max-width: 600px) {
+  .gallery-viewport {
+    top: 40%;
+    perspective: 800px;
+  }
+
+  .card {
+    width: 140px;
+    height: 182px;
+    margin-left: -70px;
+    margin-top: -91px;
+  }
+}
