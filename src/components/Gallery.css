@@ -57,7 +57,7 @@
 
 @media (max-width: 600px) {
   .gallery-viewport {
-    top: 45%;
+    top: 48%;
     perspective: 800px;
   }
 

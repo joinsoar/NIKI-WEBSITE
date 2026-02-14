@@ -1,8 +1,8 @@
 :root {
-  --bg-color: #F0F2F4;
+  --bg-color: #f0f2f4;
   --text-main: #1a1a1a;
-  --text-sub: #888888;
-  --font-stack: 'Courier New', Courier, monospace;
+  --text-sub: #6e6e6e;
+  --font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -10,12 +10,15 @@
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: var(--font-stack);
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
   height: 100vh;
   overflow: hidden;
   display: flex;

@@ -1,3 +1,4 @@
+/* ── Desktop (default) ── */
 .header {
   position: fixed;
   top: 0;
@@ -13,34 +14,67 @@
 }
 
 .brand {
-  font-size: 11px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  width: 148px;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
   text-align: right;
-  font-size: 10px;
+  font-size: 9.5px;
+  font-weight: 300;
   color: var(--text-sub);
-  line-height: 1.4;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
+.meta-subtitle,
+.meta-issue {
+  display: block;
+}
+
+/* ── Mobile ── */
 @media (max-width: 600px) {
   .header {
-    padding: 16px 20px;
+    padding: 28px 20px 0;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 4px;
   }
 
-  .brand {
-    font-size: 10px;
+  .brand img {
+    width: clamp(156px, 48vw, 210px);
   }
 
   .meta {
+    align-items: center;
     text-align: center;
-    font-size: 9px;
+    font-size: 8.5px;
+    font-weight: 300;
+    gap: 1px;
+    line-height: 1.45;
+    letter-spacing: 0.09em;
+    color: var(--text-sub);
+  }
+
+  .meta-subtitle {
+    order: 1;
+  }
+
+  .meta-issue {
+    order: 2;
   }
 }

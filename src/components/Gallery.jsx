@@ -2,8 +2,8 @@ import { useCallback, useEffect, useRef } from "react";
 import "./Gallery.css";
 
 const IMAGES = Array.from(
-  { length: 7 },
-  (_, i) => `/gallery${String(i + 1).padStart(2, "0")}.png`
+  { length: 47 },
+  (_, i) => `/${String(i + 1).padStart(2, "0")}.png`
 );
 
 const MOBILE_BREAKPOINT = 600;
